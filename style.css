@@ -95,6 +95,11 @@ h4 span:first-child {
 	font-weight: bold;
 	margin-bottom: 8px;
 }
+#skills .name:before {
+        content: "\f0d6";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
 #education .area {
 	font-weight: bold;
 }
