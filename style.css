@@ -1,3 +1,12 @@
+/*
+pdf f014
+tools f031
+server f097
+beaker f0dd
+
+terminal f0c8
+code f05f
+*/
 @import url(
 	https://fonts.googleapis.com/css?family=Lato:400,700
 );
@@ -77,6 +86,26 @@ h4 span:first-child {
 #header h2 {
 	color: #95a5a6;
 	font-size: 24px;
+}
+#header .phone:after {
+	content: "\f038";
+	font: 16px Octicons;
+	/*margin-right: 6px;*/
+}
+#header .email:after {
+	content: "\f03b";
+	font: 16px Octicons;
+	/*margin-right: 6px;*/
+}
+#header .website:after {
+	content: "\f0c5";
+	font: 16px Octicons;
+	/*margin-right: 6px;*/
+}
+#header .github:after {
+	content: "\f00a";
+	font: 16px Octicons;
+	/*margin-right: 6px;*/
 }
 #content h3 {
 	color: #f1c40f;

@@ -20,8 +20,8 @@
 	<header id="header">
 		<div class="container">
 			<div class="row">
+                                {{#resume.basics}}
 				<div class="col-sm-9 col-sm-push-3">
-					{{#resume.basics}}
 					{{#name}}
 					<h1>
 						{{.}}
@@ -32,8 +32,25 @@
 						{{.}}
 					</h2>
 					{{/label}}
-					{{/resume.basics}}
 				</div>
+				<div class="col-sm-3">
+                                        {{#email}}
+                                        <div class="email pull-right">
+                                                <a href="mailto:{{.}}">{{.}}</a>
+                                        </div>
+                                        {{/email}}
+                                        {{#website}}
+                                        <div class="website website pull-right">
+                                                <a href="{{.}}">{{.}}</a>
+                                        </div>
+                                        {{/website}}
+                                        {{#github}}
+                                        <div class="github website pull-right">
+                                                <a href="{{.}}">{{.}}</a>
+                                        </div>
+                                        {{/github}}
+				</div>
+                                {{/resume.basics}}
 			</div>
 		</div>
 	</header>
@@ -91,7 +108,6 @@
 	{{/if}}
 	{{/resume.basics}}
 
-        <!--TODO: icons for contact, tech and languages-->
 	{{#if resume.skills.length}}
 	<section id="skills" class="row">
 		<aside class="col-sm-3">
@@ -224,11 +240,21 @@
 						{{startDate}} — {{endDate}}
 					</span>
 				</h4>
+				{{#website}}
+				<div class="website pull-right">
+					<a href="{{.}}">{{.}}</a>
+				</div>
+				{{/website}}
 				{{#area}}
 				<div class="area">
 					{{.}}
 				</div>
 				{{/area}}
+                                {{#studyType}}
+                                <div class="studyType">
+                                    {{.}}
+                                </div>
+                                {{/studyType}}
 				{{#if courses.length}}
 				<h4>Favorite Courses</h4>
 				<ul class="courses">
