@@ -118,7 +118,7 @@
 			{{#each resume.skills}}
 			<div class="col-sm-6">
 				{{#name}}
-				<div class="name">
+                                <div class="{{.}}">
 					<h4>{{.}}</h4>
 				</div>
 				{{/name}}

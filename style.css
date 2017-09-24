@@ -1,11 +1,6 @@
 /*
 pdf f014
-tools f031
-server f097
 beaker f0dd
-
-terminal f0c8
-code f05f
 */
 @import url(
 	https://fonts.googleapis.com/css?family=Lato:400,700
@@ -87,6 +82,7 @@ h4 span:first-child {
 	color: #95a5a6;
 	font-size: 24px;
 }
+/* try icon before aligned? */
 #header .phone:after {
 	content: "\f038";
 	font: 16px Octicons;
@@ -124,8 +120,13 @@ h4 span:first-child {
 	font-weight: bold;
 	margin-bottom: 8px;
 }
-#skills .name:before {
-        content: "\f0d6";
+#skills .Technologies:before {
+        content: "\f033";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#skills .Languages:before {
+        content: "\f05f";
 	font: 16px Octicons;
 	margin-right: 6px;
 }
