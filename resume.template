@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="row">
                                 {{#resume.basics}}
-				<div class="col-sm-9 col-sm-push-3">
+				<div class="col-sm-5 col-sm-push-3">
 					{{#name}}
 					<h1>
 						{{.}}
@@ -33,23 +33,23 @@
 					</h2>
 					{{/label}}
 				</div>
-				<div class="col-sm-3">
+                                <div class="col-sm-5 col-sm-push-2">
                                         {{#email}}
-                                        <div class="email pull-right">
+                                        <div class="email pull-left">
                                                 <a href="mailto:{{.}}">{{.}}</a>
                                         </div>
                                         {{/email}}
                                         {{#website}}
-                                        <div class="website website pull-right">
+                                        <div class="website website pull-left">
                                                 <a href="{{.}}">{{.}}</a>
                                         </div>
                                         {{/website}}
                                         {{#github}}
-                                        <div class="github website pull-right">
+                                        <div class="github website pull-left">
                                                 <a href="{{.}}">{{.}}</a>
                                         </div>
                                         {{/github}}
-				</div>
+                                </div>
                                 {{/resume.basics}}
 			</div>
 		</div>
