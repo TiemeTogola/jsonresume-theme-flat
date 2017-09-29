@@ -1,7 +1,7 @@
 /*
 pdf f014
 beaker f0dd
-TODO: fix the responsive
+TODO: fix the responsive, adjust favicon size
 */
 @import url(
 	https://fonts.googleapis.com/css?family=Lato:400,700
@@ -66,13 +66,13 @@ h4 span:first-child {
 	padding: 0 30px;
 }
 .col-sm-push-3 {
-	margin-top: -10px;
+	margin-top: 10px;
 }
 .col-sm-6 {
 	margin-bottom: 10px;
 }
 .col-sm-12 h4 {
-	margin-top: 12px; 
+	margin-top: 12px;
 }
 .col-sm-12 + .col-sm-12 {
 	margin-top: 30px;
@@ -80,11 +80,14 @@ h4 span:first-child {
 #header {
 	background: #f4f6f6;
 	padding: 40px 10px 30px 30px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 #header h2 {
 	color: #95a5a6;
 	font-size: 24px;
+}
+#header .container {
+    padding-left: 0;
 }
 #header .email:before {
         content: "\f03b";
@@ -122,17 +125,24 @@ h4 span:first-child {
 #skills h4 {
         display: inline-block;
 }
-#skills .Technologies:before {
-        content: "\f033";
-	font: 16px Octicons;
-	margin-top: -2px;
-	margin-right: 6px;
+#skills .keywords li {
+    display: block;
+    width: 50%;
+    float: left;
 }
 #skills .Languages:before {
         content: "\f05f";
 	font: 16px Octicons;
 	margin-right: 6px;
-	padding-bottom: 2px;
+        position: relative;
+        bottom: 1px;
+}
+#skills .Technologies:before {
+        content: "\f033";
+	font: 16px Octicons;
+	margin-right: 7px;
+        position: relative;
+        bottom: 2px;
 }
 #education .area {
 	font-weight: bold;

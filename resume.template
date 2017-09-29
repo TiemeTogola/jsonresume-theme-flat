@@ -7,6 +7,7 @@
 	
 	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 	
+         <link rel="icon" type="image/png" href="favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
 	
@@ -21,7 +22,7 @@
 		<div class="container">
 			<div class="row">
                                 {{#resume.basics}}
-				<div class="col-sm-5 col-sm-push-3">
+				<div class="col-sm-5 col-sm-push-4">
 					{{#name}}
 					<h1>
 						{{.}}
@@ -33,7 +34,7 @@
 					</h2>
 					{{/label}}
 				</div>
-                                <div class="col-sm-5 col-sm-push-2">
+                                <div class="col-sm-5 col-sm-push-3">
                                         {{#email}}
                                         <div class="email pull-left">
                                                 <a href="mailto:{{.}}">{{.}}</a>
