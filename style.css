@@ -1,7 +1,5 @@
 /*
-pdf f014
-beaker f0dd
-TODO: fix the responsive, adjust favicon size
+TODO: fix the responsive, personalize colors
 */
 @import url(
 	https://fonts.googleapis.com/css?family=Lato:400,700
@@ -9,7 +7,7 @@ TODO: fix the responsive, adjust favicon size
 body {
 	background: #fff;
 	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
+	margin: 0 0 50px;
 }
 a {
 	color: #2ecc71;
@@ -65,8 +63,8 @@ h4 span:first-child {
 	max-width: 750px;
 	padding: 0 30px;
 }
-.col-sm-push-3 {
-	margin-top: 10px;
+.col-sm-push-2 {
+        margin-top: 10px;
 }
 .col-sm-6 {
 	margin-bottom: 10px;
@@ -88,6 +86,17 @@ h4 span:first-child {
 }
 #header .container {
     padding-left: 0;
+}
+#header .pdf {
+    position: relative;
+    top: 110px;
+    padding: 6px;
+    background-color: #f4f6f6;
+}
+#header .pdf:before {
+        content: "\f014";
+        font: 16px Octicons;
+        margin-right: 6px;
 }
 #header .email:before {
         content: "\f03b";

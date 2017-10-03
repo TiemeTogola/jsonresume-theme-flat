@@ -22,7 +22,13 @@
 		<div class="container">
 			<div class="row">
                                 {{#resume.basics}}
-				<div class="col-sm-5 col-sm-push-4">
+                                <div class="col-sm-1 col-sm-pull-4">
+                                        <div class="pdf pull-left">
+                                          <a href="/resume.pdf"
+                                            download="TiemeTogola_Resume.pdf">Download</a>
+                                        </div>
+                                </div>
+				<div class="col-sm-5 col-sm-push-3">
 					{{#name}}
 					<h1>
 						{{.}}
@@ -34,19 +40,19 @@
 					</h2>
 					{{/label}}
 				</div>
-                                <div class="col-sm-5 col-sm-push-3">
+                                <div class="col-sm-5 col-sm-push-2">
                                         {{#email}}
                                         <div class="email pull-left">
                                                 <a href="mailto:{{.}}">{{.}}</a>
                                         </div>
                                         {{/email}}
                                         {{#website}}
-                                        <div class="website website pull-left">
+                                        <div class="website pull-left">
                                                 <a href="{{.}}">{{.}}</a>
                                         </div>
                                         {{/website}}
                                         {{#github}}
-                                        <div class="github website pull-left">
+                                        <div class="github pull-left">
                                                 <a href="{{.}}">{{.}}</a>
                                         </div>
                                         {{/github}}
