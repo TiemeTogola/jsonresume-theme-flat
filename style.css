@@ -1,5 +1,6 @@
 /*
 TODO: fix the responsive, personalize colors
+check on mutliple browsers / devices
 */
 @import url(
 	https://fonts.googleapis.com/css?family=Lato:400,700
@@ -88,8 +89,9 @@ h4 span:first-child {
     padding-left: 0;
 }
 #header .pdf {
+    display: inline-flex;
     position: relative;
-    top: 110px;
+    top: 115px;
     padding: 6px;
     background-color: #f4f6f6;
 }
