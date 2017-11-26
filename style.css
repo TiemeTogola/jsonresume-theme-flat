@@ -206,6 +206,11 @@ h4 span:first-child {
             display: none;
         }
 }
+@media (max-width: 420px) {
+        #education .courses li {
+            width: 100%;
+        }
+}
 @media (max-width: 768px) {
 	.Languages h4 {
                 margin-top: 10px;
@@ -216,7 +221,7 @@ h4 span:first-child {
 		text-align: left;
 	}
 	#header a {
-            margin-right: 400px;
+            margin-right: 20px;
 	}
 	#publications .website a:before {
 		content: "View publication";
