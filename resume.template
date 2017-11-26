@@ -9,6 +9,7 @@
 	
         <link rel="icon" type="image/png" href="favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
 	
 	<style type="text/css">
@@ -56,6 +57,11 @@
                                                 <a href="{{.}}">{{.}}</a>
                                         </div>
                                         {{/github}}
+                                        {{#linkedin}}
+                                        <div class="linkedin pull-left">
+                                                <a href="{{.}}">{{.}}</a>
+                                        </div>
+                                        {{/linkedin}}
                                 </div>
                                 {{/resume.basics}}
 			</div>
@@ -263,7 +269,7 @@
                                 </div>
                                 {{/studyType}}
 				{{#if courses.length}}
-				<h4>Favorite Courses</h4>
+				<h4>Advanced Topics</h4>
 				<ul class="courses">
 					{{#courses}}
 					<li>{{.}}</li>

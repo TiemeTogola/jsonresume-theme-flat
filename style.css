@@ -63,9 +63,6 @@ h4 span:first-child {
 	max-width: 750px;
 	padding: 0 30px;
 }
-.col-sm-push-2 {
-        margin-top: 10px;
-}
 .col-sm-6 {
 	margin-bottom: 10px;
 }
@@ -114,6 +111,12 @@ h4 span:first-child {
         font: 16px Octicons;
         margin-right: 5px;
         margin-left: -1px;
+}
+#header .linkedin:before {
+        content: "\f0e1";
+        font: 16px FontAwesome;
+        margin-right: 5px;
+        margin-left: 1px;
 }
 #content h3 {
 	color: #f1c40f;
